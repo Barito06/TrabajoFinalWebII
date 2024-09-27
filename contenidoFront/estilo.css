@@ -1,0 +1,144 @@
+body {
+    background-image: url('Archivos/museoMetropolitano.jpg');
+}
+/*Titulo*/
+#titulo {
+    font-size: 100px;
+    text-align: center;
+    background-color: #0000001f;
+    color: rgb(136, 126, 126);
+    -webkit-text-stroke: 2px rgba(255, 217, 0, 0.178);
+    font-weight: bold;
+}
+.titulo {
+    text-align: center;
+    background-color: #ffffffaf;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+}
+/*PAGINAS:*/
+#paginas{
+    background-color: #007BFF;
+    font-size: 20px;
+}
+/*IMAGENES:*/
+
+#imagenes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+}
+
+#obra {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 5px;
+    text-align: center;
+    margin: auto;
+}
+
+#obra img {
+    max-width: 320px;
+    height: auto;
+}
+
+
+/*MODAL*/
+.modal {
+    display: none;
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content {
+    background-color: #84a6e4a8;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*FORMULARIO*/
+    #form {
+        max-width: 100%;
+        margin: 20px;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    .form-row {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+    
+    label {
+        font-size: 1rem;
+        color: #333;
+        margin-right: 10px;
+        font-weight: bold;
+        width: 120px;
+        text-align: right;
+    }
+    
+    input[type="text"],
+    select {
+        flex: 1;
+        padding: 10px;
+        margin-right: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 1rem;
+        background-color: #fdfdfd;
+        box-sizing: border-box;
+    }
+    
+    button {
+        padding: 12px 20px;
+        background-color: #007BFF;
+        color: white;
+        font-size: 1rem;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    
+    button:hover {
+        background-color: #0056b3;
+    }
+    
+    input:focus,
+    select:focus {
+        outline: none;
+        border-color: #007BFF;
+        box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    }

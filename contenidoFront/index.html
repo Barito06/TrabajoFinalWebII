@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Museo de Arte</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="museo.js" defer></script>
+</head>
+<body>
+<div class ="titulo">
+    <h1 id="titulo"> Museo Nacional de Arte </h1>
+</div>
+<div class="contenedor">
+
+    <div id="form">
+        <form id="formulario" action="" method="post">
+            <label for="busqueda"> buscar por:</label>
+            <input type="text" id="buscarPor">
+
+            <label for="localizaciones"> localizaciones:</label>
+            <select name="localizacion" id="localizacion">
+                <option value="" selected> Seleccione una opcion</option>
+                <option value="China">China</option>
+                <option value="Egypt">Egypt</option>
+                <option value="Greece">Greece</option>
+                <option value="Rome">Rome</option>
+                <option value="Japan">Japan</option>
+                <option value="India">India</option>
+                <option value="Mexico">Mexico</option>
+                <option value="Peru">Peru</option>
+                <option value="Africa">Africa</option>
+                <option value="Italy">Italy</option>
+                <option value="France">France</option>
+                <option value="Spain">Spain</option>
+                <option value="Iran">Iran</option>
+                <option value="Turkey">Turkey</option>
+                <option value="England">England</option>
+                <option value="Brazil">Brazil</option>
+                <option value="South Korea">South Korea</option>
+                <option value="Australia">Australia</option>
+                <option value="Russia">Russia</option>
+                <option value="Indonesia">Indonesia</option>
+                <option value="Paris">Paris</option>
+            </select>
+
+            <label for="departamentos">Departamentos</label>
+            <select name="departamentos" id="departamentos"></select>
+            <button id="buscar" type="submit">Buscar</button>
+        </form>
+    </div>
+
+    <div id="imagenes">
+        <div id="obra"></div>
+    </div>
+<div id="modal" class="modal">
+    <div class="modal-content"> <span class="close">&times;</span>
+        <h2>Imágenes Adicionales</h2>
+        <div id="imagenesAdicionales"></div>
+    </div>
+</div>
+
+    <div id="paginas">
+    </div>
+</div>
+
+</body>
+</html>
