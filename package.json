@@ -11,7 +11,8 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.21.0",
-    "node-google-translate-skidz": "^1.1.2"
+    "node-google-translate-skidz": "^1.1.2",
+    "vercel": "^37.6.0"
   },
   "devDependencies": {
     "nodemon": "^3.1.7"
